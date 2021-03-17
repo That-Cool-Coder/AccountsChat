@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Create Account | Accounts Chat</title>
+        <link href="/normalStyle.css" rel="stylesheet" type="text/css">
+        <link href="accountsChat.css" rel="stylesheet" type="text/css">
+        <link href="/favicon.png" rel="icon">
+    </head>
+
+    <body>
+        <div class="topbar" id="topbar">
+        <h1>Nalton Software</h1>
+        <button onclick="toggleSidebar()" id="sidebarButton">Hide all pages</button>
+        </div>
+
+        <table class="mainLayoutTable" id="mainLayoutTable">
+        <tr>
+            <td class="sidebarHolder" id="sidebarHolder">
+            <div class="sidebar" id="sidebar"></div>
+            </td>
+
+            <td class="mainHolder" id="mainCell">
+            <div class="main" id="mainCellInternals">
+
+                <p class="pageTitle">Accounts Chat Create Account</p>
+                <div id="loginArea">
+                    <br>
+                    <br>
+                    <p class="h1">Enter account details:</p>
+                    <br>
+                    <input id="createAccountUsernameInput" placeholder="username">
+                    <br>
+                    <input id="createAccountPasswordInput" placeholder="password" type="password">
+                    <br>
+                    <button onclick="sendCreateAccountRequest()">Create account</button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+            </div>
+            </td>
+        </tr>
+        </table>
+    </body>
+
+<script src="/normalFunctions.js"></script>
+<script src="utilScripts.js"></script>
+<script src="serverCommScripts.js"></script>
+<script src="globalConstants.js"></script>
+<script src="loginPageScripts.js"></script>
+<script src="createAccountPageScripts.js"></script>
+</html>

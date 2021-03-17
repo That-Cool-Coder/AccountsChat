@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chat | Accounts Chat</title>
+    <link href="/normalStyle.css" rel="stylesheet" type="text/css">
+    <link href="accountsChat.css" rel="stylesheet" type="text/css">
+    <link href="/favicon.png" rel="icon">
+</head>
+
+<body>
+    <div class="topbar" id="topbar">
+    <h1>Nalton Software</h1>
+    <button onclick="toggleSidebar()" id="sidebarButton">Hide all pages</button>
+    </div>
+
+    <table class="mainLayoutTable" id="mainLayoutTable">
+    <tr>
+        <td class="sidebarHolder" id="sidebarHolder">
+        <div class="sidebar" id="sidebar"></div>
+        </td>
+
+        <td class="mainHolder" id="mainCell">
+        <div class="main" id="mainCellInternals">
+
+            <p class="pageTitle">Accounts Chat</p>
+            <br>
+            
+            <div id="chatAreaHolder">
+                <div id="chatArea" style="overflow-y:scroll; height:50vh;">
+                    <button onclick="toggleShowAllMessages()" id="toggleAllMsgButton">Show full chat history</button>
+                    <div id="content"></div>
+                </div>
+                <p id="chatStatusBar">invisible</p>
+            </div>
+            <input id="messageInputField">
+            <button onclick="sendMessage()">Write!</button>
+            <button onclick="logout()">Log out</button>
+        </div>
+        </td>
+    </tr>
+    </table>
+</body>
+
+<script src="chatbot.js"></script>
+<script src="/normalFunctions.js"></script>
+<script src="utilScripts.js"></script>
+<script src="serverCommScripts.js"></script>
+<script src="globalConstants.js"></script>
+<script src="chatPageScripts.js"></script>
+</html>
