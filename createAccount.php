@@ -20,7 +20,7 @@ if (strlen($userFileStr) > 0) {
         // see if any users exist with that username already
         $possibleUsernameDuplicate = findUserObj($username, $userList);
 
-        $usernameBanned = in_array($username, $bannedUsernames);
+        $usernameBanned = in_array(strtolower($username), $bannedUsernames);
         
         // if the username is ok:
         if ($possibleUsernameDuplicate === null &&

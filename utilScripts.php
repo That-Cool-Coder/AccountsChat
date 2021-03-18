@@ -4,8 +4,8 @@ define('userFileName', '/var/wpd/accountsChat/userFile.txt');
 define('messageFileName', '/var/wpd/accountsChat/messageFile.txt');
 define('userEndSystemName', 'AC-Setup'); // what the system is called in the chat
 
-$bannedUsernames = ['', 'null', 'Null', 'void', 'Void',
-    userEndSystemName];
+$bannedUsernames = ['', 'null', 'void', 
+    strtolower(userEndSystemName), 'admin', 'moderator', 'mod'];
 
 class User {
     function __construct($username, $passwordHashed) {
